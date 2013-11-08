@@ -9,6 +9,10 @@ module NoVersionAutocompleteVersionPatch
       def completed?
         false
       end
+      
+      def overdue?
+        effective_date && (effective_date < Date.today) && !self.closed?
+      end
     end
   end
   
