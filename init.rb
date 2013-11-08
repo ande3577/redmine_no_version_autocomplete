@@ -1,3 +1,5 @@
+require_dependency 'no_version_autocomplete_version_patch'
+
 Redmine::Plugin.register :redmine_no_version_autocomplete do
   name 'Redmine No Version Autocomplete plugin'
   author 'David S Anderson'
